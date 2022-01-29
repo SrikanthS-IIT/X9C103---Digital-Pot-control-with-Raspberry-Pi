@@ -10,7 +10,7 @@ I have included an additional sweep function that will sweep through all values 
 
 Alternatively, - and the purpose for which the sweep function was actually written - you can use the sweep as a trigger and automatically sweep through all the resistance values. Particularly useful if you want to do a characterization experiment. 
 
-X9C103 uses the RPi.GPIO and time libraries. So you wouldn't have to include these libraries in your code if you are already calling the X9C103_BCM.py module.
+X9C103_BCM.py uses the RPi.GPIO and time libraries. So you wouldn't have to include these libraries in your code if you are already calling the X9C103_BCM.py module.
 
 To use this module, simply put the X9C103_BCM.py file in your current working folder. The X9C103_BCM_Example.py shows how to use the different functions. 
 
