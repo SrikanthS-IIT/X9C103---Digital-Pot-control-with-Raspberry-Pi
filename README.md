@@ -18,11 +18,16 @@ Remember - as in any software based control of hardware exercise, ensure that yo
 
 If you run into any issues, I will try to resolve them as best as I can, but you will see the codes are quite simple, and are based off the timing diagram on the X9C103 datasheet. If you run into a bug - it is most likely one of these issues - 
 
---- You specified board pins instead of BCM pin numbers. 
+--- You specified board pins instead of BCM pin numbers.
+
 --- The chip is not being powered properly via the 3.3 V pin. 
+
 --- You are using the chip in a potential divider config when you want to use it as a variable resistor (and vice versa). ['Somebody I know' did this]
+
 --- The wiper is either at the top most position when you want to sweep it further up, or vice versa. Reset the wiper.
+
 --- You run into strange resistance values. I would put my money on timing. Change the underlying library code as per the datasheet as required. 
+
 --- ***The wiper movement is not linear. I have seen this happen a couple of times - the quick fix is to run the Reset sweep a couple of times and it gets better.
 
 Happy sweeping! - Srikanth. 
